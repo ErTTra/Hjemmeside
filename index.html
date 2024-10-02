@@ -1,1 +1,198 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik's Portefølje</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/bd5731e721.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Hjem</a></li>
+                    <li><a href="#ommeg">Om meg</a></li>
+                    <li><a href="#portefølje">Portefølje</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspirerende utvikler</p>
+                <h1>Hei! Mitt navn er <span>Erik Tran,</span><br> jeg er nyutdannet og en aspirerende utvikler innenfor FrontEnd og Python. </h1>
+            </div>
+        </div>
+    </div>
+<!-- -------------------OM MEG------------- -->
+<div id="ommeg">
+    <div class="container">
+        <div class="row">
+            <div class="ommeg-col-1">
+                <img src="profilbilde.jpg">
+            </div>
+            <div class="ommeg-col-2">
+                <h1 class="sub-title">Om meg</h1>
+                <p>Jeg er en dedikert person med en variert arbeidsbakgrunn i finansbransjen. Min erfaring inkluderer arbeid innen AML, kredittkortbehandling, forsikringsvurdering og kunderådgivning. 
+
+                    I tillegg har jeg en sterk akademisk bakgrunn med en Mastergrad i Innovasjon og samfunn, og Bachelor i IT og digitalisering. Utdanningen min innen IT har gitt meg inngående kunnskap om datavitenskap, programvareutvikling og digital transformasjon. Programmer som jeg jobber med og holder meg oppdatert på er; Python, JavaScript, HTML og CSS.
+                    
+                    Jeg er alltid opptatt av å lære mer og ser etter kompetanse for å bli bedre og utvikle mine egne prosjekter.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('ferdigheter')">Ferdigheter</p>
+                        <p class="tab-links" onclick="opentab('jobberfaringer')">Jobberfaringer</p>
+                        <p class="tab-links"onclick="opentab('utdanning')">Utdanning</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="ferdigheter">
+                        <ul>
+                            <li><span>Python</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="jobberfaringer">
+                        <ul>
+                            <li><span>2019-2022</span><br>Danske Bank - AML Advisor</li>
+                            <li><span>2018</span><br>CCC - Content Manager, Tyskland (Essen)</li>
+                            <li><span>2017-2018</span><br>Nordea - Kundebehandler</li>
+                            <li><span>2016-2017</span><br>Sparebank1 Forsikring- Skadebehandler</li>
+                            <li><span>2016</span><br>DNB- Kunderådgiver</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="utdanning">
+                        <ul>
+                            <li><span>2021-2024</span><br>Høgskolen i Molde - Bachelor i IT og Digitalisering</li>
+                            <li><span>2014-2016</span><br>NTNU - Master i Innovasjon, Entreprenørskap og Samfunn</li>
+                            <li><span>2010-2013</span><br>Høgskolen i Telemark (Bø) - Bachelor i Innovasjon og Entreprenørskap</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------Portefølje------------- -->
+
+<div id="portefølje">
+    <div class="container">
+        <h1 class="sub-title">Mine Prosjekter</h1>
+        <div class="prosjekt-liste">
+            <div class="prosjekt">
+                <img src="kungfu.jpg">
+                <div class="layer">
+                    <h3>Yoga trening</h3>
+                    <p>booking av yoga time</p>
+                </div>
+            </div>
+            <div class="prosjekt">
+                <img src="pdfchat.jpg">
+                <div class="layer">
+                    <h3>PDFchat med AI</h3>
+                    <p>Chat med PDF filen din ved bruk av AI.</p>
+                </div>
+            </div>
+            <div class="prosjekt">
+                <img src="webscrape.jpg">
+                <div class="layer">
+                    <h3>WEBscrape med python</h3>
+                    <p>Trekk ut data fra nettsteder</p>
+                </div>
+            </div>
+            <div class="prosjekt">
+                <img src="annet.jpg">
+                <div class="layer">
+                    <h3>Andre små prosjekter/programmer</h3>
+                    <p>Mindre prosjekter/programmer ifbm læring</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Se mer</a>
+    </div>
+</div>
+
+
+<!-- -------------------kontakt------------- -->
+ <div id="kontakt">
+    <div class="container">
+        <div class="row">
+            <div class="kontakt-left">
+                <h1 class="sub-title">Kontakt meg</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> eriktrandev@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +47 46962777</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/erik-thanh-tran-9201b231"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Erik _Tran_CV.pdf" class="btn btn2">Last ned CV</a>
+            </div>
+            <div class="kontakt-right">
+                <form name="submit-to-google-sheet">
+                    <input type="tekst" name="Navn", placeholder="Ditt navn" required>
+                    <input type="email" name="Email" placeholder="Din email" required>
+                    <textarea name="Melding" rows="6" placeholder="Skriv din melding her"></textarea>
+                    <button type="Send" class="btn btn2">Send</button>
+                </form>
+                <span id="mld"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Erik T.Tran.</p>
+    </div>
+ </div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycby-BZcfpjzIbtZGYR_tMbO4wkaoe4IeaIdd5Hr69yQtSHRYFQpdXii6TW7d9LeBuzYjug/exec"
+    const form = document.forms["submit-to-google-sheet"]
+    const mld = document.getElementById("mld")
+
+    form.addEventListener("submit", e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: "POST", body: new FormData(form)})
+        .then(response => {
+            mld.innerHTML = "Meldingen er sendt"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error("Error!", error.message))
+    })
+  </script>
+</body>
+</html>
+
